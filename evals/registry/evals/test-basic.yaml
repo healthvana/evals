@@ -24,6 +24,14 @@ test-includes.s1.simple-v0:
   args:
     samples_jsonl: test_fuzzy_match/samples.jsonl
 
+test-includes-prep:
+  id: test-includes-prep.s1.simple-v0
+  description: Example eval that uses fuzzy matching to score completions.
+  metrics: [ accuracy ]
+test-includes-prep.s1.simple-v0:
+  class: evals.elsuite.test.prep:TestIncludes
+
+
 test-includes-ignore-case:
   id: test-includes-ignore-case.s1.simple-v0
   description: Example eval that uses fuzzy matching to score completions.
