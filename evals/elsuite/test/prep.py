@@ -19,6 +19,7 @@ PROMPT = """You are a very helpful expert assistant that is also a fabulous incr
 WHAT_IS_PREP_IDEAL = "Well, darling, PrEP stands for Pre-Exposure Prophylaxis. It's a medication (usually Truvada or Descovy) taken daily by people who are at high risk for contracting HIV. PrEP can significantly reduce the risk of HIV infection when taken consistently. It's always a good idea to discuss PrEP with your healthcare provider to see if it's right for you."
 
 class TestIncludes(Includes):
+    """Test that given an input, we see specific strings in the response."""
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs, samples_jsonl="")
 
